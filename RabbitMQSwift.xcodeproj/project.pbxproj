@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3FBD25D19FCFFDA0034AB30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FBD25C19FCFFDA0034AB30 /* AppDelegate.swift */; };
+		C3FBD25F19FCFFDA0034AB30 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3FBD25E19FCFFDA0034AB30 /* Images.xcassets */; };
+		C3FBD26219FCFFDA0034AB30 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FBD26019FCFFDA0034AB30 /* MainMenu.xib */; };
+		C3FBD26E19FCFFDA0034AB30 /* RabbitMQSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FBD26D19FCFFDA0034AB30 /* RabbitMQSwiftTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3FBD26819FCFFDA0034AB30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3FBD24F19FCFFDA0034AB30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3FBD25619FCFFDA0034AB30;
+			remoteInfo = RabbitMQSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C3FBD25719FCFFDA0034AB30 /* RabbitMQSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RabbitMQSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3FBD25B19FCFFDA0034AB30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3FBD25C19FCFFDA0034AB30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C3FBD25E19FCFFDA0034AB30 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C3FBD26119FCFFDA0034AB30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C3FBD26719FCFFDA0034AB30 /* RabbitMQSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RabbitMQSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3FBD26C19FCFFDA0034AB30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3FBD26D19FCFFDA0034AB30 /* RabbitMQSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RabbitMQSwiftTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3FBD25419FCFFDA0034AB30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3FBD26419FCFFDA0034AB30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3FBD24E19FCFFDA0034AB30 = {
+			isa = PBXGroup;
+			children = (
+				C3FBD25919FCFFDA0034AB30 /* RabbitMQSwift */,
+				C3FBD26A19FCFFDA0034AB30 /* RabbitMQSwiftTests */,
+				C3FBD25819FCFFDA0034AB30 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3FBD25819FCFFDA0034AB30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3FBD25719FCFFDA0034AB30 /* RabbitMQSwift.app */,
+				C3FBD26719FCFFDA0034AB30 /* RabbitMQSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3FBD25919FCFFDA0034AB30 /* RabbitMQSwift */ = {
+			isa = PBXGroup;
+			children = (
+				C3FBD25C19FCFFDA0034AB30 /* AppDelegate.swift */,
+				C3FBD25E19FCFFDA0034AB30 /* Images.xcassets */,
+				C3FBD26019FCFFDA0034AB30 /* MainMenu.xib */,
+				C3FBD25A19FCFFDA0034AB30 /* Supporting Files */,
+			);
+			path = RabbitMQSwift;
+			sourceTree = "<group>";
+		};
+		C3FBD25A19FCFFDA0034AB30 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3FBD25B19FCFFDA0034AB30 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3FBD26A19FCFFDA0034AB30 /* RabbitMQSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3FBD26D19FCFFDA0034AB30 /* RabbitMQSwiftTests.swift */,
+				C3FBD26B19FCFFDA0034AB30 /* Supporting Files */,
+			);
+			path = RabbitMQSwiftTests;
+			sourceTree = "<group>";
+		};
+		C3FBD26B19FCFFDA0034AB30 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3FBD26C19FCFFDA0034AB30 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3FBD25619FCFFDA0034AB30 /* RabbitMQSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3FBD27119FCFFDA0034AB30 /* Build configuration list for PBXNativeTarget "RabbitMQSwift" */;
+			buildPhases = (
+				C3FBD25319FCFFDA0034AB30 /* Sources */,
+				C3FBD25419FCFFDA0034AB30 /* Frameworks */,
+				C3FBD25519FCFFDA0034AB30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RabbitMQSwift;
+			productName = RabbitMQSwift;
+			productReference = C3FBD25719FCFFDA0034AB30 /* RabbitMQSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3FBD26619FCFFDA0034AB30 /* RabbitMQSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3FBD27419FCFFDA0034AB30 /* Build configuration list for PBXNativeTarget "RabbitMQSwiftTests" */;
+			buildPhases = (
+				C3FBD26319FCFFDA0034AB30 /* Sources */,
+				C3FBD26419FCFFDA0034AB30 /* Frameworks */,
+				C3FBD26519FCFFDA0034AB30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3FBD26919FCFFDA0034AB30 /* PBXTargetDependency */,
+			);
+			name = RabbitMQSwiftTests;
+			productName = RabbitMQSwiftTests;
+			productReference = C3FBD26719FCFFDA0034AB30 /* RabbitMQSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3FBD24F19FCFFDA0034AB30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Carl Gleisner";
+				TargetAttributes = {
+					C3FBD25619FCFFDA0034AB30 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					C3FBD26619FCFFDA0034AB30 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = C3FBD25619FCFFDA0034AB30;
+					};
+				};
+			};
+			buildConfigurationList = C3FBD25219FCFFDA0034AB30 /* Build configuration list for PBXProject "RabbitMQSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3FBD24E19FCFFDA0034AB30;
+			productRefGroup = C3FBD25819FCFFDA0034AB30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3FBD25619FCFFDA0034AB30 /* RabbitMQSwift */,
+				C3FBD26619FCFFDA0034AB30 /* RabbitMQSwiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3FBD25519FCFFDA0034AB30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3FBD25F19FCFFDA0034AB30 /* Images.xcassets in Resources */,
+				C3FBD26219FCFFDA0034AB30 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3FBD26519FCFFDA0034AB30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3FBD25319FCFFDA0034AB30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3FBD25D19FCFFDA0034AB30 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3FBD26319FCFFDA0034AB30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3FBD26E19FCFFDA0034AB30 /* RabbitMQSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3FBD26919FCFFDA0034AB30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3FBD25619FCFFDA0034AB30 /* RabbitMQSwift */;
+			targetProxy = C3FBD26819FCFFDA0034AB30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C3FBD26019FCFFDA0034AB30 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3FBD26119FCFFDA0034AB30 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3FBD26F19FCFFDA0034AB30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C3FBD27019FCFFDA0034AB30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C3FBD27219FCFFDA0034AB30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RabbitMQSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C3FBD27319FCFFDA0034AB30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RabbitMQSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C3FBD27519FCFFDA0034AB30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RabbitMQSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RabbitMQSwift.app/Contents/MacOS/RabbitMQSwift";
+			};
+			name = Debug;
+		};
+		C3FBD27619FCFFDA0034AB30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RabbitMQSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RabbitMQSwift.app/Contents/MacOS/RabbitMQSwift";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3FBD25219FCFFDA0034AB30 /* Build configuration list for PBXProject "RabbitMQSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3FBD26F19FCFFDA0034AB30 /* Debug */,
+				C3FBD27019FCFFDA0034AB30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3FBD27119FCFFDA0034AB30 /* Build configuration list for PBXNativeTarget "RabbitMQSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3FBD27219FCFFDA0034AB30 /* Debug */,
+				C3FBD27319FCFFDA0034AB30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C3FBD27419FCFFDA0034AB30 /* Build configuration list for PBXNativeTarget "RabbitMQSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3FBD27519FCFFDA0034AB30 /* Debug */,
+				C3FBD27619FCFFDA0034AB30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3FBD24F19FCFFDA0034AB30 /* Project object */;
+}
