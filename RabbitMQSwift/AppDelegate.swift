@@ -26,6 +26,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         var connection = AMQPConnection()
         connection.connectToHost("localhost", port: 5672)
         connection.loginAsUser("guest", password: "guest")
+        sleep(5)
     }
 
 }

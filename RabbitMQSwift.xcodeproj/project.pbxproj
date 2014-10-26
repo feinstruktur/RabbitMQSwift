@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C3EED36D19FD046800EA98DB /* AMQPChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EED36619FD046800EA98DB /* AMQPChannel.swift */; };
+		C3EED36E19FD046800EA98DB /* AMQPConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EED36719FD046800EA98DB /* AMQPConnection.swift */; };
+		C3EED36F19FD046800EA98DB /* AMQPConsumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EED36819FD046800EA98DB /* AMQPConsumer.swift */; };
+		C3EED37019FD046800EA98DB /* AMQPExchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EED36919FD046800EA98DB /* AMQPExchange.swift */; };
+		C3EED37119FD046800EA98DB /* AMQPMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EED36A19FD046800EA98DB /* AMQPMessage.swift */; };
+		C3EED37219FD046800EA98DB /* AMQPObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EED36B19FD046800EA98DB /* AMQPObject.swift */; };
+		C3EED37319FD046800EA98DB /* AMQPQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EED36C19FD046800EA98DB /* AMQPQueue.swift */; };
 		C3FBD25D19FCFFDA0034AB30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FBD25C19FCFFDA0034AB30 /* AppDelegate.swift */; };
 		C3FBD25F19FCFFDA0034AB30 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3FBD25E19FCFFDA0034AB30 /* Images.xcassets */; };
 		C3FBD26219FCFFDA0034AB30 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FBD26019FCFFDA0034AB30 /* MainMenu.xib */; };
 		C3FBD26E19FCFFDA0034AB30 /* RabbitMQSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FBD26D19FCFFDA0034AB30 /* RabbitMQSwiftTests.swift */; };
 		C3FBD27C19FD009B0034AB30 /* RabbitMQSwift-Bridging-Header.c in Sources */ = {isa = PBXBuildFile; fileRef = C3FBD27B19FD009B0034AB30 /* RabbitMQSwift-Bridging-Header.c */; };
-		C3FBD28419FD00C20034AB30 /* AMQPConsumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FBD27D19FD00C20034AB30 /* AMQPConsumer.swift */; };
-		C3FBD28519FD00C20034AB30 /* AMQPObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FBD27E19FD00C20034AB30 /* AMQPObject.swift */; };
-		C3FBD28619FD00C20034AB30 /* AMQPQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FBD27F19FD00C20034AB30 /* AMQPQueue.swift */; };
-		C3FBD28719FD00C20034AB30 /* AMQPMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FBD28019FD00C20034AB30 /* AMQPMessage.swift */; };
-		C3FBD28819FD00C20034AB30 /* AMQPExchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FBD28119FD00C20034AB30 /* AMQPExchange.swift */; };
-		C3FBD28919FD00C20034AB30 /* AMQPConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FBD28219FD00C20034AB30 /* AMQPConnection.swift */; };
-		C3FBD28A19FD00C20034AB30 /* AMQPChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FBD28319FD00C20034AB30 /* AMQPChannel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +32,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C3EED36619FD046800EA98DB /* AMQPChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMQPChannel.swift; sourceTree = "<group>"; };
+		C3EED36719FD046800EA98DB /* AMQPConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMQPConnection.swift; sourceTree = "<group>"; };
+		C3EED36819FD046800EA98DB /* AMQPConsumer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMQPConsumer.swift; sourceTree = "<group>"; };
+		C3EED36919FD046800EA98DB /* AMQPExchange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMQPExchange.swift; sourceTree = "<group>"; };
+		C3EED36A19FD046800EA98DB /* AMQPMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMQPMessage.swift; sourceTree = "<group>"; };
+		C3EED36B19FD046800EA98DB /* AMQPObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMQPObject.swift; sourceTree = "<group>"; };
+		C3EED36C19FD046800EA98DB /* AMQPQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMQPQueue.swift; sourceTree = "<group>"; };
 		C3FBD25719FCFFDA0034AB30 /* RabbitMQSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RabbitMQSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3FBD25B19FCFFDA0034AB30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3FBD25C19FCFFDA0034AB30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,13 +49,6 @@
 		C3FBD26D19FCFFDA0034AB30 /* RabbitMQSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RabbitMQSwiftTests.swift; sourceTree = "<group>"; };
 		C3FBD27719FD00190034AB30 /* RabbitMQSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RabbitMQSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		C3FBD27B19FD009B0034AB30 /* RabbitMQSwift-Bridging-Header.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "RabbitMQSwift-Bridging-Header.c"; sourceTree = "<group>"; };
-		C3FBD27D19FD00C20034AB30 /* AMQPConsumer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AMQPConsumer.swift; path = ../../../Developer/RabbitMQSwift/AMQPConsumer.swift; sourceTree = "<group>"; };
-		C3FBD27E19FD00C20034AB30 /* AMQPObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AMQPObject.swift; path = ../../../Developer/RabbitMQSwift/RabbitMQSwift/AMQPObject.swift; sourceTree = "<group>"; };
-		C3FBD27F19FD00C20034AB30 /* AMQPQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AMQPQueue.swift; path = ../../../Developer/RabbitMQSwift/RabbitMQSwift/AMQPQueue.swift; sourceTree = "<group>"; };
-		C3FBD28019FD00C20034AB30 /* AMQPMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AMQPMessage.swift; path = ../../../Developer/RabbitMQSwift/RabbitMQSwift/AMQPMessage.swift; sourceTree = "<group>"; };
-		C3FBD28119FD00C20034AB30 /* AMQPExchange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AMQPExchange.swift; path = ../../../Developer/RabbitMQSwift/RabbitMQSwift/AMQPExchange.swift; sourceTree = "<group>"; };
-		C3FBD28219FD00C20034AB30 /* AMQPConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AMQPConnection.swift; path = ../../../Developer/RabbitMQSwift/RabbitMQSwift/AMQPConnection.swift; sourceTree = "<group>"; };
-		C3FBD28319FD00C20034AB30 /* AMQPChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AMQPChannel.swift; path = ../../../Developer/RabbitMQSwift/RabbitMQSwift/AMQPChannel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,13 +92,13 @@
 		C3FBD25919FCFFDA0034AB30 /* RabbitMQSwift */ = {
 			isa = PBXGroup;
 			children = (
-				C3FBD27D19FD00C20034AB30 /* AMQPConsumer.swift */,
-				C3FBD27E19FD00C20034AB30 /* AMQPObject.swift */,
-				C3FBD27F19FD00C20034AB30 /* AMQPQueue.swift */,
-				C3FBD28019FD00C20034AB30 /* AMQPMessage.swift */,
-				C3FBD28119FD00C20034AB30 /* AMQPExchange.swift */,
-				C3FBD28219FD00C20034AB30 /* AMQPConnection.swift */,
-				C3FBD28319FD00C20034AB30 /* AMQPChannel.swift */,
+				C3EED36619FD046800EA98DB /* AMQPChannel.swift */,
+				C3EED36719FD046800EA98DB /* AMQPConnection.swift */,
+				C3EED36819FD046800EA98DB /* AMQPConsumer.swift */,
+				C3EED36919FD046800EA98DB /* AMQPExchange.swift */,
+				C3EED36A19FD046800EA98DB /* AMQPMessage.swift */,
+				C3EED36B19FD046800EA98DB /* AMQPObject.swift */,
+				C3EED36C19FD046800EA98DB /* AMQPQueue.swift */,
 				C3FBD25C19FCFFDA0034AB30 /* AppDelegate.swift */,
 				C3FBD25E19FCFFDA0034AB30 /* Images.xcassets */,
 				C3FBD26019FCFFDA0034AB30 /* MainMenu.xib */,
@@ -231,15 +231,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3FBD28719FD00C20034AB30 /* AMQPMessage.swift in Sources */,
-				C3FBD28819FD00C20034AB30 /* AMQPExchange.swift in Sources */,
+				C3EED37119FD046800EA98DB /* AMQPMessage.swift in Sources */,
+				C3EED37219FD046800EA98DB /* AMQPObject.swift in Sources */,
+				C3EED36F19FD046800EA98DB /* AMQPConsumer.swift in Sources */,
 				C3FBD27C19FD009B0034AB30 /* RabbitMQSwift-Bridging-Header.c in Sources */,
-				C3FBD28619FD00C20034AB30 /* AMQPQueue.swift in Sources */,
-				C3FBD28A19FD00C20034AB30 /* AMQPChannel.swift in Sources */,
-				C3FBD28519FD00C20034AB30 /* AMQPObject.swift in Sources */,
+				C3EED36D19FD046800EA98DB /* AMQPChannel.swift in Sources */,
+				C3EED37019FD046800EA98DB /* AMQPExchange.swift in Sources */,
+				C3EED36E19FD046800EA98DB /* AMQPConnection.swift in Sources */,
+				C3EED37319FD046800EA98DB /* AMQPQueue.swift in Sources */,
 				C3FBD25D19FCFFDA0034AB30 /* AppDelegate.swift in Sources */,
-				C3FBD28919FD00C20034AB30 /* AMQPConnection.swift in Sources */,
-				C3FBD28419FD00C20034AB30 /* AMQPConsumer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +446,7 @@
 				C3FBD27319FCFFDA0034AB30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3FBD27419FCFFDA0034AB30 /* Build configuration list for PBXNativeTarget "RabbitMQSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +455,7 @@
 				C3FBD27619FCFFDA0034AB30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
