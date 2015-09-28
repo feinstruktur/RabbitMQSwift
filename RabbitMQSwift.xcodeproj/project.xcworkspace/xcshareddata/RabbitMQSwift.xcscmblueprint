@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D93406FF22A2F77DA19C3DDB2D623F374211A8A0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5DECC3D92606A8E639BB23E9F74A619917E98DD9" : 0,
+    "D93406FF22A2F77DA19C3DDB2D623F374211A8A0" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "DF82B3B6-4C45-4DF0-AB0A-1D9E04F29E01",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5DECC3D92606A8E639BB23E9F74A619917E98DD9" : "..",
+    "D93406FF22A2F77DA19C3DDB2D623F374211A8A0" : "RabbitMQSwift\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RabbitMQSwift",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "RabbitMQSwift.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:feinstruktur\/CoPilot.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5DECC3D92606A8E639BB23E9F74A619917E98DD9"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:feinstruktur\/RabbitMQSwift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D93406FF22A2F77DA19C3DDB2D623F374211A8A0"
+    }
+  ]
+}

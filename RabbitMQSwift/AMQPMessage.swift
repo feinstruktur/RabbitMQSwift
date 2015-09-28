@@ -45,7 +45,7 @@ class AMQPMessage : AMQPObject {
         messageProperties : UnsafeMutablePointer<amqp_basic_properties_t>, receivedAt : NSDate) {
             func fromAmqpBytes(amqpBytes : amqp_bytes_t) -> String {
                 let data = NSData(bytes: amqpBytes.bytes, length: Int(amqpBytes.len))
-                return NSString(data: data, encoding: NSUTF8StringEncoding)!
+                return NSString(data: data, encoding: NSUTF8StringEncoding)! as String
             }
             
             func checkFlag(flags : UInt32, mask : UInt32) -> Bool {
@@ -74,60 +74,60 @@ class AMQPMessage : AMQPObject {
             let flags = UInt32(messageProperties.memory._flags)
             let flagType = UInt32(AMQP_BASIC_CONTENT_TYPE_FLAG)
             
-            if (checkFlag(flags, UInt32(AMQP_BASIC_CONTENT_TYPE_FLAG))) {
+            if (checkFlag(flags, mask: UInt32(AMQP_BASIC_CONTENT_TYPE_FLAG))) {
                 self.contentType = fromAmqpBytes(messageProperties.memory.content_type)
-                println(self.contentType)
+                print(self.contentType)
             }
             
-            if(checkFlag(flags, UInt32(AMQP_BASIC_CONTENT_ENCODING_FLAG))) {
+            if(checkFlag(flags, mask: UInt32(AMQP_BASIC_CONTENT_ENCODING_FLAG))) {
                 contentEncoding = fromAmqpBytes(messageProperties.memory.content_encoding)
             }
             
-            if(checkFlag(flags, UInt32(AMQP_BASIC_HEADERS_FLAG))) {
+            if(checkFlag(flags, mask: UInt32(AMQP_BASIC_HEADERS_FLAG))) {
                 headers = messageProperties.memory.headers
             }
             
-            if(checkFlag(flags, UInt32(AMQP_BASIC_DELIVERY_MODE_FLAG))) {
+            if(checkFlag(flags, mask: UInt32(AMQP_BASIC_DELIVERY_MODE_FLAG))) {
                 deliveryMode = Int(messageProperties.memory.delivery_mode)
             }
             
-            if(checkFlag(flags, UInt32(AMQP_BASIC_PRIORITY_FLAG))) {
+            if(checkFlag(flags, mask: UInt32(AMQP_BASIC_PRIORITY_FLAG))) {
                 priority = Int(messageProperties.memory.priority)
             }
             
-            if(checkFlag(flags, UInt32(AMQP_BASIC_CORRELATION_ID_FLAG))) {
+            if(checkFlag(flags, mask: UInt32(AMQP_BASIC_CORRELATION_ID_FLAG))) {
                 correlationId = fromAmqpBytes(messageProperties.memory.correlation_id)
             }
             
-            if(checkFlag(flags, UInt32(AMQP_BASIC_REPLY_TO_FLAG))) {
+            if(checkFlag(flags, mask: UInt32(AMQP_BASIC_REPLY_TO_FLAG))) {
                 replyToQueueName = fromAmqpBytes(messageProperties.memory.reply_to)
             }
             
-            if(checkFlag(flags, UInt32(AMQP_BASIC_EXPIRATION_FLAG))) {
+            if(checkFlag(flags, mask: UInt32(AMQP_BASIC_EXPIRATION_FLAG))) {
                 expiration = fromAmqpBytes(messageProperties.memory.expiration)
             }
             
-            if(checkFlag(flags, UInt32(AMQP_BASIC_MESSAGE_ID_FLAG))) {
+            if(checkFlag(flags, mask: UInt32(AMQP_BASIC_MESSAGE_ID_FLAG))) {
                 messageId = fromAmqpBytes(messageProperties.memory.message_id)
             }
             
-            if(checkFlag(flags, UInt32(AMQP_BASIC_TIMESTAMP_FLAG))) {
+            if(checkFlag(flags, mask: UInt32(AMQP_BASIC_TIMESTAMP_FLAG))) {
                 timestamp = messageProperties.memory.timestamp
             }
             
-            if(checkFlag(flags, UInt32(AMQP_BASIC_TYPE_FLAG))) {
+            if(checkFlag(flags, mask: UInt32(AMQP_BASIC_TYPE_FLAG))) {
                 type = fromAmqpBytes(messageProperties.memory.type)
             }
             
-            if(checkFlag(flags, UInt32(AMQP_BASIC_USER_ID_FLAG))) {
+            if(checkFlag(flags, mask: UInt32(AMQP_BASIC_USER_ID_FLAG))) {
                 userId = fromAmqpBytes(messageProperties.memory.user_id)
             }
             
-            if(checkFlag(flags, UInt32(AMQP_BASIC_APP_ID_FLAG))) {
+            if(checkFlag(flags, mask: UInt32(AMQP_BASIC_APP_ID_FLAG))) {
                 appId = fromAmqpBytes(messageProperties.memory.app_id)
             }
             
-            if(checkFlag(flags, UInt32(AMQP_BASIC_CLUSTER_ID_FLAG))) {
+            if(checkFlag(flags, mask: UInt32(AMQP_BASIC_CLUSTER_ID_FLAG))) {
                 clusterId = fromAmqpBytes(messageProperties.memory.cluster_id)
             }
             

@@ -19,14 +19,14 @@ class AMQPObject {
         
         var description = ""
         
-        switch (reply.reply_type.value) {
-        case AMQP_RESPONSE_NORMAL.value:
+        switch (reply.reply_type.rawValue) {
+        case AMQP_RESPONSE_NORMAL.rawValue:
             description = "Normal response"
             break
-        case AMQP_RESPONSE_NONE.value:
+        case AMQP_RESPONSE_NONE.rawValue:
             description = "Missing RPC reply type"
             break
-        case AMQP_RESPONSE_LIBRARY_EXCEPTION.value:
+        case AMQP_RESPONSE_LIBRARY_EXCEPTION.rawValue:
             let libraryError = Int(reply.library_error)
             if (reply.library_error != 0) {
                 description = String.fromCString(amqp_error_string2(reply.library_error))!
@@ -34,7 +34,7 @@ class AMQPObject {
                 description = "End of stream"
             }
             break
-        case AMQP_RESPONSE_SERVER_EXCEPTION.value:
+        case AMQP_RESPONSE_SERVER_EXCEPTION.rawValue:
             let methodIdValue = Int(reply.reply.id) // TODO: I was unable to put this in nested switch
             if (methodIdValue == 655410) { // The constant AMQP_CONNECTION_CLOSE_METHOD is declared using macros, since Swift has no pre-processor these won't be available
                 var amqpConnectionClose = reply.reply.decoded

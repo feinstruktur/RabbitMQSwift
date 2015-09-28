@@ -39,14 +39,14 @@ class AMQPConnection : AMQPObject {
             socket = amqp_tcp_socket_new(connection)
             
             if (socket == nil) {
-                println("Failed to create socket.")
+                print("Failed to create socket.")
                 return
             }
             
             let socketStatus = Int(amqp_socket_open(socket, host.UTF8String, Int32(port)))
             
             if (socketStatus < 0) {
-                println("Failed to open socket.")
+                print("Failed to open socket.")
                 return
             }
             
@@ -64,11 +64,11 @@ class AMQPConnection : AMQPObject {
                 
                 // TODO: Wrap the login function in the bridging header
 //                var reply = amqp_login_with_credentials(self.connection, vhost, CInt(0), CInt(131072), CInt(0), AMQP_SASL_METHOD_PLAIN, username.UTF8String, password.UTF8String)
-                    var reply = amqp_login_with_credentials(self.internalConnection(), vhost, CInt(0), CInt(131072), CInt(0), AMQP_SASL_METHOD_PLAIN, username.UTF8String, password.UTF8String)
+                    let reply = amqp_login_with_credentials(self.internalConnection(), vhost, CInt(0), CInt(131072), CInt(0), AMQP_SASL_METHOD_PLAIN, username.UTF8String, password.UTF8String)
                 
-                if (reply.reply_type.value != AMQP_RESPONSE_NORMAL.value) {
-                    println("Error while logging in.")
-                    println(self.errorDescriptionForReply(reply))
+                if (reply.reply_type.rawValue != AMQP_RESPONSE_NORMAL.rawValue) {
+                    print("Error while logging in.")
+                    print(self.errorDescriptionForReply(reply))
                     return
                 } else {
                     loggedIn = true
@@ -93,8 +93,8 @@ class AMQPConnection : AMQPObject {
         if (connected && connection != COpaquePointer.null()) {
             let reply : amqp_rpc_reply_t = amqp_connection_close(self.connection, CInt(AMQP_REPLY_SUCCESS))
         
-            if (reply.reply_type.value != AMQP_RESPONSE_NORMAL.value) {
-                println("Error while disconnecting from host")
+            if (reply.reply_type.rawValue != AMQP_RESPONSE_NORMAL.rawValue) {
+                print("Error while disconnecting from host")
             }
         
             amqp_destroy_connection(connection)
@@ -117,7 +117,7 @@ class AMQPConnection : AMQPObject {
     
     func internalConnection() -> amqp_connection_state_t {
         if (connection == COpaquePointer.null()) {
-            println("Warning! Tried to get internal connection while this was null.")
+            print("Warning! Tried to get internal connection while this was null.")
         }
         
         return connection
@@ -129,14 +129,14 @@ class AMQPConnection : AMQPObject {
     
     func checkLastOperation(context: NSString) -> Bool {
         if (connected) {
-            var reply : amqp_rpc_reply_t = amqp_get_rpc_reply(connection)
+            let reply : amqp_rpc_reply_t = amqp_get_rpc_reply(connection)
             
-            if (reply.reply_type.value != AMQP_RESPONSE_NORMAL.value) {
-                println(String(format: "Failed operation: %@, Error: %@", context, self.errorDescriptionForReply(reply)))
+            if (reply.reply_type.rawValue != AMQP_RESPONSE_NORMAL.rawValue) {
+                print(String(format: "Failed operation: %@, Error: %@", context, self.errorDescriptionForReply(reply)))
                 return false
             }
         } else {
-            println("Cannot check last operation if not connected.")
+            print("Cannot check last operation if not connected.")
             return false
         }
         

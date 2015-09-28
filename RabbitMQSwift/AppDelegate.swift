@@ -23,7 +23,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     @IBAction func pushButton(sender: AnyObject) {
-        var connection = AMQPConnection()
+        let connection = AMQPConnection()
         connection.connectToHost("localhost", port: 5672)
         connection.loginAsUser("guest", password: "guest")
         sleep(5)

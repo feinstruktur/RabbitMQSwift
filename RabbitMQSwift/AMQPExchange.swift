@@ -62,7 +62,7 @@ class AMQPExchange : AMQPObject {
     
     func internalExchange() -> amqp_bytes_t {
         if (initialized == false) {
-            println("Warning! Tried to access internal exchange while not initialized")
+            print("Warning! Tried to access internal exchange while not initialized")
         }
         
         return exchange
@@ -74,7 +74,7 @@ class AMQPExchange : AMQPObject {
         
             channel.connection.checkLastOperation("Publishing message")
         } else {
-            println("Cannot publish before exchange has been initialized.")
+            print("Cannot publish before exchange has been initialized.")
         }
     }
     

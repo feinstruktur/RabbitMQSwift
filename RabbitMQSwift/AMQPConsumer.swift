@@ -45,12 +45,12 @@ class AMQPConsumer : AMQPObject {
     }
     
     func pop() -> AMQPMessage {
-        println("Entered pop()")
+        print("Entered pop()")
         
         var message = AMQPMessage()
         var messageDone = false
         var result : Int32 = Int32(-1)
-        var frame = UnsafeMutablePointer<amqp_frame_t>.alloc(sizeof(amqp_frame_t))
+        let frame = UnsafeMutablePointer<amqp_frame_t>.alloc(sizeof(amqp_frame_t))
         var receivedBytes : size_t = 0
         var body : amqp_bytes_t = amqp_empty_bytes
         var deliveryProperties = UnsafeMutablePointer<amqp_basic_deliver_t>()
