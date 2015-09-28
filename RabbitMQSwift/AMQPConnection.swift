@@ -22,7 +22,7 @@ class AMQPConnection : AMQPObject {
     
     override init() {
         connection = amqp_new_connection()
-        socket = COpaquePointer.null()
+        socket = nil
     }
     
     deinit {
@@ -90,7 +90,7 @@ class AMQPConnection : AMQPObject {
     }
     
     func disconnect() {
-        if (connected && connection != COpaquePointer.null()) {
+        if (connected && connection != nil) {
             let reply : amqp_rpc_reply_t = amqp_connection_close(self.connection, CInt(AMQP_REPLY_SUCCESS))
         
             if (reply.reply_type.rawValue != AMQP_RESPONSE_NORMAL.rawValue) {
@@ -98,7 +98,7 @@ class AMQPConnection : AMQPObject {
             }
         
             amqp_destroy_connection(connection)
-            connection = COpaquePointer.null() // TODO: Needed?
+            connection = nil // TODO: Needed?
             
             loggedIn = false
             connected = false
@@ -116,7 +116,7 @@ class AMQPConnection : AMQPObject {
     }
     
     func internalConnection() -> amqp_connection_state_t {
-        if (connection == COpaquePointer.null()) {
+        if (connection == nil) {
             print("Warning! Tried to get internal connection while this was null.")
         }
         
